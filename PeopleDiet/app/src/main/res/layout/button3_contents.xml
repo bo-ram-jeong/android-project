@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:text="유.형.에 따라\n나에게 맞는 다이어트 방법을 알아보자 !"
+        android:textSize="20dp"
+        android:textColor="#943b4e"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:layout_width="415dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/choice" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_irregular"
+                android:layout_width="170dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/button_style2"
+                android:paddingLeft="5dp"
+                android:text="식 사\n불 규 칙 형"
+                android:textColor="#943b4e"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btn_stress"
+                android:layout_width="170dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/button_style2"
+                android:paddingLeft="5dp"
+                android:text="스 트 레 스\n과 다 형"
+                android:textColor="#943b4e"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_sleep"
+                android:layout_width="170dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/button_style2"
+                android:paddingLeft="5dp"
+                android:text="수 면\n부 족 형"
+                android:textColor="#943b4e"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btn_nutrition"
+                android:layout_width="170dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/button_style2"
+                android:paddingLeft="5dp"
+                android:text="영 양\n부 족 형"
+                android:textColor="#943b4e"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_lazy"
+            android:layout_width="330dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_style2"
+            android:paddingLeft="5dp"
+            android:text="과 식\n게 으 른 형"
+            android:textColor="#943b4e"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+</LinearLayout>

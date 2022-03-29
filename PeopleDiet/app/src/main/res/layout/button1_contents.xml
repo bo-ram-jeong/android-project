@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:text="남"
+                    android:textSize="25dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:text="여"
+                    android:textSize="25dp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="키 (cm)"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/ed1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="몸무게 (kg)"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/ed2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="나이 (세)"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/ed3"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_result"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="20dp"
+            android:background="#f0b1bf"
+            android:text="결 과 확 인"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_bmi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="BMI"
+            android:textSize="25dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_bmi_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#943b4e"
+            android:textSize="15dp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_bmi"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/bmi"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_rmr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="RMR (기초 대사량)"
+            android:textSize="25dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_rmr_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#943b4e"
+            android:textSize="15dp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_rmr"
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/rmr"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+</LinearLayout>

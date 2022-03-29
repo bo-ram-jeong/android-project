@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0b1bf"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="2018081031_정보람"
+            android:textColor="#943b4e"
+            android:textSize="25dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="의외의 고칼로리 식품"
+            android:textStyle="bold"
+            android:textColor="#943b4e"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <Gallery
+            android:id="@+id/gal_food_info"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="170dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/button_style1"
+                    android:paddingLeft="5dp"
+                    android:text="BMI\n\u0026\nRMR"
+                    android:textSize="20dp"
+                    android:textColor="#943b4e"/>
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="170dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/button_style1"
+                    android:paddingLeft="5dp"
+                    android:text="How\nMany\nCalories ?"
+                    android:textSize="20dp"
+                    android:textColor="#943b4e"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="350dp"
+                android:layout_height="80dp"
+                android:layout_margin="30dp"
+                android:background="@drawable/button_style1"
+                android:paddingLeft="5dp"
+                android:text="나에게 맞는 다이어트 방법은 ?"
+                android:textSize="20dp"
+                android:textColor="#943b4e"
+                android:textStyle="italic"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

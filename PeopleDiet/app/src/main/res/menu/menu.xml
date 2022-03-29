@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/o_exercise"
+        android:title="유산소 운동" />
+    <item android:title="무산소 운동" >
+        <menu>
+            <item
+                android:id="@+id/upper_body"
+                android:title="상체"/>
+            <item
+                android:id="@+id/lower_body"
+                android:title="하체"/>
+            <item
+                android:id="@+id/stomach"
+                android:title="복부"/>
+
+        </menu>
+    </item>
+</menu>
